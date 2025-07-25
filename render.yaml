@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: fastapi-speech
+    env: python
+    python_version: 3.9
+    buildCommand: pip install --default-timeout=100 -r app/requirements.txt
+    startCommand: python3 -m uvicorn app.main:app --host 0.0.0.0 --port $PORT

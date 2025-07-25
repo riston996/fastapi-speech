@@ -1,17 +1,17 @@
 [tool.poetry]
 name = "fastapi-speech"
 version = "0.1.0"
-description = "FastAPI Text-to-Speech API"
-authors = ["riston996 <your-email>"]
+description = "FastAPI speech processing app"
+authors = ["Your Name <your.email@example.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
 fastapi = "0.115.2"
 uvicorn = "0.32.0"
-transformers = "4.46.0"
-torch = "2.3.1"
-scipy = "1.11.4"
-numpy = "2.1.2"
+transformers = ">=4.47.0"
+torch = "2.5.0"
+scipy = ">=1.14.0"
+numpy = "^1.26.0"
 pydantic = "2.9.2"
 urllib3 = "<2.0"
 
