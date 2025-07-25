@@ -2,7 +2,7 @@ fastapi==0.115.2
 uvicorn==0.32.0
 transformers==4.46.0
 torch==2.5.0
-scipy==1.12.0
+scipy==1.11.0
 numpy==1.26.0
 pydantic==2.9.2
 urllib3<2.0
