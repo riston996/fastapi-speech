@@ -22,7 +22,7 @@ app = FastAPI()
 # Load processor and model (loaded once at startup)
 processor = BarkProcessor.from_pretrained("suno/bark-small")
 model = BarkModel.from_pretrained("suno/bark-small").to("cpu")
-logger.info("Model loaded on CPU in float32")
+
 
 # Set a distinct pad token ID to avoid warnings
 processor.pad_token_id = 1
