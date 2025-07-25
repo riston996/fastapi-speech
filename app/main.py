@@ -36,7 +36,7 @@ class AudioRequest(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to the Text-to-Speech API. Use POST /generate-audio to generate audio."}
+    return {"message": "Welcome to the Text-to-Speech APIs. Use POST /generate-audio to generate audio."}
 
 @app.post("/generate-audio", response_class=FileResponse)
 async def generate_audio(request: AudioRequest):
